@@ -12,33 +12,33 @@ namespace Models.DomainPrimitives
             _lastName = lastName;
         }
 
-        private void ValidateLastName(string lastName)
-        {
-            if (IsNull(lastName))
-            {
-                throw new ArgumentNullException("Lastname cannot be null");
-            }
-            if (IsShorterThanMinimumLength(lastName))
-            {
-                throw new ArgumentOutOfRangeException($"Last name cannot have less than {MinimumLength} characters");
-            }
-            if (IsLongerThanMaximumLength(lastName))
-            {
-                throw new ArgumentOutOfRangeException($"Last name cannot have more than {MaximumLength} characters");
-            }
-            if (ContainsNonAlphabeticCharacters(lastName))
-            {
-                throw new ArgumentException("Last name can only contain alphabetic letters");
-            }
-        }
+        // private void ValidateLastName(string lastName)
+        // {
+        //     if (IsNull(lastName))
+        //     {
+        //         throw new ArgumentNullException("Lastname cannot be null");
+        //     }
+        //     if (IsShorterThanMinimumLength(lastName))
+        //     {
+        //         throw new ArgumentOutOfRangeException($"Last name cannot have less than {MinimumLength} characters");
+        //     }
+        //     if (IsLongerThanMaximumLength(lastName))
+        //     {
+        //         throw new ArgumentOutOfRangeException($"Last name cannot have more than {MaximumLength} characters");
+        //     }
+        //     if (ContainsNonAlphabeticCharacters(lastName))
+        //     {
+        //         throw new ArgumentException("Last name can only contain alphabetic letters");
+        //     }
+        // }
 
-        private bool IsNull(string lastName) => lastName == null;
+        // private bool IsNull(string lastName) => lastName == null;
 
-        private bool IsShorterThanMinimumLength(string lastName) => lastName.Length < MinimumLength;
+        // private bool IsShorterThanMinimumLength(string lastName) => lastName.Length < MinimumLength;
 
-        private bool IsLongerThanMaximumLength(string lastName) => lastName.Length > MaximumLength;
+        // private bool IsLongerThanMaximumLength(string lastName) => lastName.Length > MaximumLength;
 
-        private bool ContainsNonAlphabeticCharacters(string lastName) => lastName.Any(c => !char.IsLetter(c));
+        // private bool ContainsNonAlphabeticCharacters(string lastName) => lastName.Any(c => !char.IsLetter(c));
 
         public string GetValue() => _lastName;
     }
