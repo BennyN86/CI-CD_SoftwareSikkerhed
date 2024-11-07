@@ -14,22 +14,22 @@ namespace Models.DomainPrimitives
 
         private void ValidateLastName(string lastName)
         {
-            // if (IsNull(lastName))
-            // {
-            //     throw new ArgumentNullException("Lastname cannot be null");
-            // }
-            // if (IsShorterThanMinimumLength(lastName))
-            // {
-            //     throw new ArgumentOutOfRangeException($"Last name cannot have less than {MinimumLength} characters");
-            // }
-            // if (IsLongerThanMaximumLength(lastName))
-            // {
-            //     throw new ArgumentOutOfRangeException($"Last name cannot have more than {MaximumLength} characters");
-            // }
-            // if (ContainsNonAlphabeticCharacters(lastName))
-            // {
-            //     throw new ArgumentException("Last name can only contain alphabetic letters");
-            // }
+            if (IsNull(lastName))
+            {
+                throw new ArgumentNullException("Lastname cannot be null");
+            }
+            if (IsShorterThanMinimumLength(lastName))
+            {
+                throw new ArgumentOutOfRangeException($"Last name cannot have less than {MinimumLength} characters");
+            }
+            if (IsLongerThanMaximumLength(lastName))
+            {
+                throw new ArgumentOutOfRangeException($"Last name cannot have more than {MaximumLength} characters");
+            }
+            if (ContainsNonAlphabeticCharacters(lastName))
+            {
+                throw new ArgumentException("Last name can only contain alphabetic letters");
+            }
         }
 
         private bool IsNull(string lastName) => lastName == null;
