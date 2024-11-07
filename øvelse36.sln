@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidateTheNameModelBinding", "øvelse26\ValidateTheNameModelBinding.csproj", "{1F31A097-F965-48B6-9AFB-EBB5AA8DF83A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlInjection", "SqlInjection\SqlInjection.csproj", "{BDE5CF91-EBDE-457F-9E77-E12D6BEE95AB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +20,9 @@ Global
 		{1F31A097-F965-48B6-9AFB-EBB5AA8DF83A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F31A097-F965-48B6-9AFB-EBB5AA8DF83A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F31A097-F965-48B6-9AFB-EBB5AA8DF83A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDE5CF91-EBDE-457F-9E77-E12D6BEE95AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDE5CF91-EBDE-457F-9E77-E12D6BEE95AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDE5CF91-EBDE-457F-9E77-E12D6BEE95AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDE5CF91-EBDE-457F-9E77-E12D6BEE95AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
